@@ -1,0 +1,13 @@
+ private void ShowPopup(string message)
+    {
+        string script = "alert('" + message + "');";
+        ScriptManager.RegisterStartupScript(this, GetType(), "ShowPopup", script, true);
+    }
+-----------------------------------------------------------------------------------------
+
+               if (hashedPasswordWithSalt != storedHashedPassword)
+                {
+                    ShowPopup("Invalid UserName/Password...Try again!!!");
+                    return;
+                }
+
